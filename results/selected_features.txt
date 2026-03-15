@@ -1,0 +1,17 @@
+Selected Feature Indices:
+0,3,5,8,14,17,26,27,30,36,37,38,40
+
+Selected Feature Names:
+Age (yrs)
+BMI
+Pulse rate(bpm)
+Cycle(R/I)
+II    beta-HCG(mIU/mL)
+FSH/LH
+RBS(mg/dl)
+Weight gain(Y/N)
+Hair loss(Y/N)
+Follicle No. (L)
+Follicle No. (R)
+Avg. F size (L) (mm)
+Endometrium (mm)

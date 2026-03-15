@@ -1,0 +1,2 @@
+Model Evaluation Results:
+{'accuracy': 0.7927, 'precision_weighted': 0.7879, 'recall_weighted': 0.7927, 'f1_weighted': 0.7834, 'precision_macro': 0.7782, 'recall_macro': 0.7323, 'f1_macro': 0.7465, 'auc_score': 0.9199, 'total_samples': 82, 'evaluation_timestamp': '2025-09-19 01:06:13'}
