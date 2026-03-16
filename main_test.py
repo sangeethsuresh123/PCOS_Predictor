@@ -6,7 +6,7 @@ from modules.data_loader import DataLoader
 from modules.data_cleaner import DataCleaner
 from modules.feature_selector import GeneticFeatureSelector
 from modules.smote_processor import SMOTEProcessor
-from modules.mlp_ensemble import MLPEnsemble
+from modules.mlp_ensemble_conference import MLPEnsemble
 from modules.model_evaluator import ModelEvaluator
 from modules.shap_explainer import SHAPExplainer
 import numpy as np
@@ -49,8 +49,8 @@ def main():
     selected_feature_names = cleaned_columns
 
     # 5️⃣ SMOTE
-    categorical_features = [16, 17, 18, 19, 20]  # Adjust if needed
-    # categorical_features = [5, 6, 7]
+    # categorical_features = [16, 17, 18, 19, 20]  # Adjust if needed
+    categorical_features = [5, 6, 7]
     smote = SMOTEProcessor()
     X_train_balanced, y_train_balanced = smote.apply_smote(
         X_train_selected, y_trainval, categorical_features=categorical_features

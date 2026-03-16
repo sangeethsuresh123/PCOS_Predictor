@@ -31,7 +31,7 @@ else:
 
 
 class MLPEnsemble(BaseEstimator, ClassifierMixin):
-    """Create ensemble of 4 MLPs using Keras/TensorFlow with LogitBoost and weighted averaging"""
+    """Create ensemble of 2 MLPs using Keras/TensorFlow with LogitBoost and weighted averaging"""
 
     def __init__(self, configurations=None, epochs=1000, batch_size=32, verbose=0):
         """
@@ -56,7 +56,7 @@ class MLPEnsemble(BaseEstimator, ClassifierMixin):
         self.history = []
 
     def _get_default_configurations(self):
-        """Get the 4 MLP configurations including the new 4th configuration"""
+        """Get the 2 MLP configurations including the new 4th configuration"""
         return [
             {
                 'name': 'Config_1',
